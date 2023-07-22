@@ -20,7 +20,7 @@ body {
   color: white;
   font-size: large;
   font-weight: 900;
-  padding-left: 1rem;
+  padding-left: 2rem;
 }
 
 .logos {
@@ -34,6 +34,13 @@ body {
 }
 .sidebarLogos {
   filter: invert(1);
+}
+
+#dashboardLogo{
+  width: 3rem;
+  height: 3rem;
+  margin-right: 0.5rem;
+  top: 12px;
 }
 .topHeader,
 .bottomHeader {
@@ -52,13 +59,14 @@ body {
   align-items: center;
   position: relative;
 }
-#searchLogo, #bell {
+#searchLogo,
+#bell {
   width: 2rem;
   height: 2rem;
   position: relative;
-  top: 0; 
+  top: 0;
 }
-#searchBar{
+#searchBar {
   background-color: #f4f4f5;
   border-style: none;
   border-radius: 20px;
@@ -67,26 +75,21 @@ body {
   height: fit-content;
 }
 
-
 #profilePic1 {
   width: 3rem;
   align-self: center;
-  justify-self: end;
-  margin-right: 1rem;
 }
 
 .bottomHeader {
   grid-template-columns: 1fr 6fr 3fr;
   gap: 1rem;
+  padding-bottom: 2rem;
 }
-
-
 
 #profilePic2 {
   width: 4rem;
   align-self: center;
   justify-self: start;
-  
 }
 .nameContainer {
   display: grid;
@@ -114,5 +117,11 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
   align-items: center;
-  justify-items:center;
+  justify-items: center;
+}
+
+.mainContent {
+  background-color: #f4f4f5;
+  display: grid;
+  box-shadow: 0 4px 2px -2px lightgray inset;
 }
