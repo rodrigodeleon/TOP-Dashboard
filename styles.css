@@ -15,14 +15,17 @@ body {
 
 .sidebar {
   background-color: #0ea5e9;
-  grid-area: 1 / 1 / 3 / 2;
-  display: grid;
+  grid-area: 1 / 1 / -1 / 2;
   color: white;
   font-size: large;
   font-weight: 900;
   padding-left: 2rem;
+   
 }
-
+.sidebarWrapper {
+  height: 100vh;
+  display: grid;
+}
 .logos {
   width: 1.5rem;
   height: 1.5rem;
@@ -124,4 +127,33 @@ body {
   background-color: #f4f4f5;
   display: grid;
   box-shadow: 0 4px 2px -2px lightgray inset;
+  grid-template-columns: 2fr 1fr;
+}
+#mainLeft {
+  display: grid;
+  grid-template-rows: 2rem 1fr;
+  padding: 1rem 2rem 2rem 2rem;
+  gap: 2rem;
+}
+#mainRight{
+  display: grid;
+  grid-template-rows: 2rem 1fr 2rem 1fr;
+  padding: 1rem 2rem 2rem 2rem;
+  gap: 2rem;
+}
+
+.mainTittles {
+  font-weight: bold;
+}
+.projects{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 2rem;
+  
+}
+.cards, .announcements, .trending{
+  background-color: white;
+  padding: 2.5rem;
+  box-shadow: 0 4px 2px -2px lightgray;
 }
