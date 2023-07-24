@@ -131,7 +131,7 @@ body {
 /* MAIN CONTENT STYLE */
 
 .mainContent {
-  background-color: #f4f4f5;
+  background-color: #e2e8f0;
   display: grid;
   box-shadow: 0 4px 2px -2px lightgray inset;
   grid-template-columns: 2fr 1fr;
@@ -139,14 +139,14 @@ body {
 #mainLeft {
   display: grid;
   grid-template-rows: 2rem 1fr;
-  padding: 1rem 2rem 2rem 2rem;
-  gap: 2rem;
+  padding: 1rem 1.5rem 1.5rem 2rem;
+  gap: 1.5rem;
 }
 #mainRight{
   display: grid;
   grid-template-rows: 2rem 1fr 2rem 1fr;
-  padding: 1rem 2rem 2rem 2rem;
-  gap: 2rem;
+  padding: 1rem 1.5rem 1.5rem 0.5rem;
+  gap: 1.5rem;
 }
 
 .mainTittles {
@@ -157,23 +157,34 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 2rem;
-  
-}
+  gap: 1.5rem;
+  }
 .cards, .announcements, .trending{
   background-color: white;
   border-radius: 10px;
-  padding: 2.5rem;
+  padding: 2rem;
   box-shadow: 0 4px 2px -2px gray;
 }
 
 .cards {
-  box-shadow: 2rem 0 0 -1.5rem #ffc400 inset, 0 4px 2px -2px gray;;
+  box-shadow: 2rem 0 0 -1.5rem #ffc400 inset, 0 4px 2px -2px gray;
   color: #747474;
-  padding-top: 1.5rem;
+  display: flex;
+  gap:0.5rem;
+  flex-direction: column;
+
 
 }
 .cards h4 {
-  margin: 0 0 0.8rem 0;
+  margin: 0;
   color: black;
+}
+.cardIcons {
+  display:flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: right;
+}
+.cardIcons img {
+  width: 1.8rem ;
 }
