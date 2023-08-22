@@ -1,5 +1,4 @@
-:root {
-}
+
 body {
   height: 100vh;
   margin: 0;
@@ -22,7 +21,6 @@ body {
   font-size: large;
   font-weight: 900;
   padding-left: 2rem;
-   
 }
 .sidebarWrapper {
   height: 100vh;
@@ -41,7 +39,7 @@ body {
   filter: invert(1);
 }
 
-#dashboardLogo{
+#dashboardLogo {
   width: 3rem;
   height: 3rem;
   margin-right: 0.5rem;
@@ -136,30 +134,30 @@ body {
   box-shadow: 0 4px 2px -2px lightgray inset;
   grid-template-columns: 2fr 1fr;
 }
-#mainLeft {
-  display: grid;
-  grid-template-rows: 2rem 1fr;
+#mainLeft, #mainRight {
+  display: flex;
+  flex-direction: column;
   padding: 1rem 1.5rem 1.5rem 2rem;
-  gap: 1.5rem;
+  
 }
-#mainRight{
-  display: grid;
-  grid-template-rows: 2rem 1fr 2rem 1fr;
-  padding: 1rem 1.5rem 1.5rem 0.5rem;
-  gap: 1.5rem;
+#mainRight {
+  padding-left: 0.5rem;
 }
 
 .mainTittles {
   font-weight: bold;
   font-size: large;
+  
 }
-.projects{
+.projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 1.5rem;
-  }
-.cards, .announcements, .trending{
+}
+.cards,
+.announcements,
+.trending {
   background-color: white;
   border-radius: 10px;
   padding: 2rem;
@@ -170,21 +168,50 @@ body {
   box-shadow: 2rem 0 0 -1.5rem #ffc400 inset, 0 4px 2px -2px gray;
   color: #747474;
   display: flex;
-  gap:0.5rem;
+  gap: 0.5rem;
   flex-direction: column;
-
-
 }
 .cards h4 {
   margin: 0;
   color: black;
 }
 .cardIcons {
-  display:flex;
+  display: flex;
   gap: 1rem;
   margin-top: 1rem;
   justify-content: right;
 }
 .cardIcons img {
-  width: 1.8rem ;
+  width: 1.8rem;
+}
+
+.announcements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 3rem;
+}
+
+.announcement:last-child {
+  border-bottom-style: none;
+  margin-bottom: 0;
+  
+}
+
+.announcement {
+  font-size: smaller;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #b9b9b9;
+  margin-bottom: 1.5rem;
+}
+.announcement * {
+  margin: 0;
+}
+
+.announcement p {
+  margin: 0;
+  color: #747474;
+  padding: 0.5rem 0 1.5rem 0;
 }
